@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./src/styling/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="." class="header-logo" title="The Biggest News">
+          <img src="./assets/images/logo.svg" alt="The Biggest News" />
+        </a>
+        <!-- nav.nav>ul.nav-list>li -->
+        <button class="nav-menu-button nav-open"><svg width="1em" height="1em" viewBox="0 0 40 17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg></button>
+        <nav class="nav">
+          <button class="nav-menu-button nav-close"><svg width="1em" height="1em" viewBox="0 0 32 31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg></button>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">New</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Popular</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <h1 class="sr-only">The Biggest News Homepage</h1>
+        <section class="hero">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg">
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="Web3 Thumbnail">
+          </picture>
+          <div class="hero-text">
+            <h2 class="hero-title" id="hero-article-title">
+              The Bright Future of Web 3.0?
+            </h2>
+            <div class="hero-content">
+              <p class="hero-subtitle">
+                We dive into the next evolution of the web that claims to put the
+                power of the platforms back into the hands of the people. But is it
+                really fulfilling its promise?
+              </p>
+              <a href="#" class="read-article" role="button"
+                >Read more
+                <span class="sr-only"
+                  >about <span aria-labelledby="hero-article-title"></span></span
+              ></a>
+            </div>
+          </div>
+        </section>
+        <section class="new-articles">
+          <h2 class="section-title new-articles-title">New <span class="sr-only">Articles</span></h2>
+          <ol class="new-articles-list">
+            <li class="new-articles-listitem">
+              <article class="new-article">
+                <h3 class="new-article-title"><a href="#" class="article-link">Hydrogen VS Electric Cars</a></h3>
+                <p class="new-article-subtitle">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </article>
+            </li>
+            <li class="new-articles-listitem">
+              <article class="new-article">
+                <h3 class="new-article-title"><a href="#" class="article-link">The Downsides of AI Artistry</a></h3>
+                <p class="new-article-subtitle">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </article>
+            </li>
+            <li class="new-articles-listitem">
+              <article class="new-article">
+                <h3 class="new-article-title"><a href="#" class="article-link">Is VC Funding Drying Up?</a></h3>
+                <p class="new-article-subtitle">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </article>
+            </li>
+          </ol>
+        </section>
+      </main>
+      <aside class="top-articles">
+        <h2 class="sr-only">Top Articles</h2>
+        <ol class="top-articles-list">
+          <li>
+            <article class="top-article" data-number="01">
+              <img src="./assets/images/image-retro-pcs.jpg" alt="">
+              <div class="top-article-content">
+                <h3 class="top-article-title"><a href="#" class="article-link">Reviving Retro PCs</a></h3>
+                <p class="top-article-subtitle">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="top-article" data-number="02">
+              <img src="./assets/images/image-top-laptops.jpg" alt="">
+              <div class="top-article-content">
+                <h3 class="top-article-title"><a href="#" class="article-link">Top 10 Laptops of 2022</a></h3>
+                <p class="top-article-subtitle">
+                  Our best picks for various needs and budgets.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="top-article" data-number="03">
+              <img src="./assets/images/image-gaming-growth.jpg" alt="">
+              <div class="top-article-content">
+                <h3 class="top-article-title"><a href="#" class="article-link">The Growth of Gaming</a></h3>
+                <p class="top-article-subtitle">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
+              </div>
+            </article>
+          </li>
+        </ol>
+      </aside>
+    </div>
+
+    <script type="module" src="./src/scripts/main.js"></script>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
